@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Thayssa 🌹</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       PÉTALAS DE FUNDO (geradas pelo JS)
+  ============================================= -->
+  <div id="petals-container" aria-hidden="true"></div>
+
+  <!-- =============================================
+       TELA DE ABERTURA
+  ============================================= -->
+  <section id="intro" class="intro-screen" aria-label="Tela de abertura">
+
+    <div class="intro-content">
+      <p class="intro-quote" id="intro-quote">
+        Não prometi flores.<br>
+        Não prometi um presente caro.<br>
+        Mas prometi para mim mesmo que faria algo<br>
+        que tivesse um pouco mais de significado.
+      </p>
+
+      <div class="intro-rose" id="intro-rose" aria-hidden="true">🌹</div>
+
+      <h1 class="intro-welcome" id="intro-welcome">
+        Bem-vinda, CEO.
+      </h1>
+
+      <p class="intro-sub" id="intro-sub">
+        Este não é apenas um site.<br>
+        É um pequeno pedaço do jeito que eu enxergo você.
+      </p>
+
+      <button class="btn-start" id="btn-start" aria-label="Clique para começar a experiência">
+        <span class="btn-start-icon">✨</span>
+        Clique para começar
+      </button>
+    </div>
+
+  </section>
+
+  <!-- =============================================
+       EXPERIÊNCIA PRINCIPAL (cards)
+  ============================================= -->
+  <main id="experience" class="experience hidden" aria-label="Experiência principal">
+
+    <!-- Indicador de progresso -->
+    <nav class="progress-bar" aria-label="Progresso">
+      <div class="progress-fill" id="progress-fill"></div>
+    </nav>
+
+    <!-- Dots de navegação -->
+    <div class="dots-nav" id="dots-nav" aria-label="Navegação por cards"></div>
+
+    <!-- Container de slides -->
+    <div class="slides-wrapper" id="slides-wrapper">
+
+      <!-- ==================== CARD 1 ==================== -->
+      <article class="card" data-card="0" aria-label="Card 1: Quem é Thayssa">
+        <div class="card-inner">
+          <span class="card-eyebrow">01 / 10</span>
+          <h2 class="card-title reveal-up">Quem é Thayssa?</h2>
+          <div class="card-divider"></div>
+          <p class="card-text reveal-up delay-1">
+            Existem pessoas que chamam atenção pelo que têm.
+          </p>
+          <p class="card-text reveal-up delay-2">
+            Existem pessoas que chamam atenção pelo que mostram.
+          </p>
+          <p class="card-text reveal-up delay-3">
+            Mas existem aquelas que chamam atenção simplesmente
+            <em>pela forma como vivem.</em>
+          </p>
+
+          <!-- INSERIR FOTO 1 -->
+          <div class="photo-placeholder reveal-up delay-4" aria-label="Espaço para foto de Thayssa">
+            <span class="photo-icon">🌸</span>
+            
+                 <img src="foto1.jpg" alt="Thayssa" />
+          </div>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 2 ==================== -->
+      <article class="card" data-card="1" aria-label="Card 2: USEYELA">
+        <div class="card-inner card-useyela">
+          <span class="card-eyebrow">02 / 10</span>
+          <div class="useyela-title" aria-label="USEYELA">
+            <span class="useyela-letter reveal-letter">U</span>
+            <span class="useyela-letter reveal-letter">S</span>
+            <span class="useyela-letter reveal-letter">E</span>
+            <span class="useyela-letter reveal-letter">Y</span>
+            <span class="useyela-letter reveal-letter">E</span>
+            <span class="useyela-letter reveal-letter">L</span>
+            <span class="useyela-letter reveal-letter">A</span>
+          </div>
+          <div class="card-divider"></div>
+          <p class="card-text reveal-up delay-1">
+            Criar uma empresa exige coragem.
+          </p>
+          <p class="card-text reveal-up delay-2">
+            Fazer ela existir exige ainda mais.
+          </p>
+          <p class="card-text reveal-up delay-3">
+            E você faz isso acontecer.
+          </p>
+          <p class="card-text reveal-up delay-4">
+            Não é apenas uma marca.
+            <br>
+            Existe dedicação, esforço e personalidade por trás dela.
+          </p>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 3 ==================== -->
+      <article class="card" data-card="2" aria-label="Card 3: Timeline">
+        <div class="card-inner">
+          <span class="card-eyebrow">03 / 10</span>
+          <h2 class="card-title reveal-up">Um dia na vida de Thayssa</h2>
+          <div class="card-divider"></div>
+          <ul class="timeline" id="timeline-list" aria-label="Atividades">
+            <li class="timeline-item" data-index="0"><span class="tl-icon">🎬</span><span class="tl-text">Edita vídeos</span></li>
+            <li class="timeline-item" data-index="1"><span class="tl-icon">✨</span><span class="tl-text">Cria conteúdo</span></li>
+            <li class="timeline-item" data-index="2"><span class="tl-icon">👑</span><span class="tl-text">Cuida da USEYELA</span></li>
+            <li class="timeline-item" data-index="3"><span class="tl-icon">⚖️</span><span class="tl-text">Estagia no no Tribunal de Justiça</span></li>
+            <li class="timeline-item" data-index="4"><span class="tl-icon">🚗</span><span class="tl-text">Ajuda na loja do pai</span></li>
+            <li class="timeline-item" data-index="5"><span class="tl-icon">💻</span><span class="tl-text">Trabalha para outras marcas</span></li>
+            <li class="timeline-item" data-index="6"><span class="tl-icon">💪</span><span class="tl-text">Corre atrás dos próprios sonhos</span></li>
+          </ul>
+          <p class="card-text reveal-up timeline-end-phrase" style="font-style:italic;margin-top:1.5rem;">
+            "E ainda consegue sorrir."
+          </p>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 4 ==================== -->
+      <article class="card" data-card="3" aria-label="Card 4: Status">
+        <div class="card-inner">
+          <span class="card-eyebrow">04 / 10</span>
+          <h2 class="card-title reveal-up">Status:</h2>
+          <div class="card-divider"></div>
+          <ul class="status-list">
+            <li class="status-item reveal-up delay-1"><span class="status-check">✔</span> CEO</li>
+            <li class="status-item reveal-up delay-2"><span class="status-check">✔</span> Editora</li>
+            <li class="status-item reveal-up delay-3"><span class="status-check">✔</span> Empreendedora</li>
+            <li class="status-item reveal-up delay-4"><span class="status-check">✔</span> Estagiária</li>
+            <li class="status-item reveal-up delay-5"><span class="status-check">✔</span> Ajuda a família</li>
+            <li class="status-item reveal-up delay-6"><span class="status-check">✔</span> Resolve problemas</li>
+            <li class="status-item reveal-up delay-7 status-funny"><span class="status-check">✔</span> Provavelmente vive cansada 😂</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 5 ==================== -->
+      <article class="card" data-card="4" aria-label="Card 5: Protagonista">
+        <div class="card-inner card-marvel">
+          <span class="card-eyebrow">05 / 10</span>
+          <div class="marvel-orb" aria-hidden="true">
+            <div class="orb-ring orb-ring-1"></div>
+            <div class="orb-ring orb-ring-2"></div>
+            <div class="orb-ring orb-ring-3"></div>
+            <span class="orb-icon">⚡</span>
+          </div>
+          <p class="card-text reveal-up delay-1" style="margin-top:1.5rem;">
+            Algumas pessoas <em>gostam</em> da Marvel.
+          </p>
+          <p class="card-text reveal-up delay-2">
+            Outras claramente <strong>nasceram com energia de protagonista.</strong>
+          </p>
+          <p class="card-text reveal-up delay-3" style="font-size:0.85rem;opacity:0.65;margin-top:2rem;">
+            (o enredo, a determinação e o charme já estão aí)
+          </p>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 6 ==================== -->
+      <article class="card" data-card="5" aria-label="Card 6: Música">
+        <div class="card-inner">
+          <span class="card-eyebrow">06 / 10</span>
+          <h2 class="card-title reveal-up">A playlist favorita</h2>
+          <div class="card-divider"></div>
+          <div class="music-notes" aria-hidden="true">
+            <span class="note n1">♪</span>
+            <span class="note n2">♫</span>
+            <span class="note n3">♩</span>
+            <span class="note n4">♬</span>
+            <span class="note n5">♪</span>
+          </div>
+          <p class="card-text reveal-up delay-1">
+            Se tocar <strong>Jorge & Mateus</strong>...<br>
+            existe uma boa chance de você cantar junto.
+          </p>
+          <p class="card-text reveal-up delay-2">
+            Se tocar <strong>Luan Santana</strong>...<br>
+            também.
+          </p>
+          <div class="music-player reveal-up delay-3">
+            <button class="btn-play" id="btn-play" aria-label="Dar play na música">
+              <span id="play-icon">▶</span> Dar play
+            </button>
+            <div class="play-message hidden" id="play-message" aria-live="polite">
+              😂 Infelizmente os direitos autorais não deixaram
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 7 ==================== -->
+      <article class="card" data-card="6" aria-label="Card 7: Fotos">
+        <div class="card-inner">
+          <span class="card-eyebrow">07 / 10</span>
+          <h2 class="card-title reveal-up">Momentos</h2>
+          <div class="card-divider"></div>
+          <div class="polaroid-grid">
+
+            <!-- INSERIR FOTO 2 -->
+            <div class="polaroid reveal-up delay-1" style="--rot: -3deg;">
+              <div class="polaroid-img" aria-label="Foto 2">
+                
+                <img src="foto2.jpg" alt="Momento especial" /> -
+              </div>
+              <p class="polaroid-caption">foto aqui</p>
+            </div>
+
+            <!-- INSERIR FOTO 3 -->
+            <div class="polaroid reveal-up delay-2" style="--rot: 2deg;">
+              <div class="polaroid-img" aria-label="Foto 3">
+                <img src="foto3.jpg" alt="Momento especial" />
+              </div>
+              <p class="polaroid-caption">foto aqui</p>
+            </div>
+
+            <!-- INSERIR FOTO 4 -->
+            <div class="polaroid reveal-up delay-3" style="--rot: -1.5deg;">
+              <div class="polaroid-img" aria-label="Foto 4">
+                <img src="foto4.jpg" alt="Momento especial" />
+              </div>
+              <p class="polaroid-caption">foto aqui</p>
+            </div>
+
+            <!-- INSERIR FOTO 5 -->
+            <div class="polaroid reveal-up delay-4" style="--rot: 3deg;">
+              <div class="polaroid-img" aria-label="Foto 5">
+                <img src="foto5.jpg" alt="Momento especial" /> 
+              </div>
+              <p class="polaroid-caption">foto aqui</p>
+            </div>
+
+          </div>
+          <p class="card-text reveal-up delay-5" style="font-style:italic;margin-top:1.5rem;text-align:center;">
+            "Alguns momentos simplesmente merecem ser guardados."
+          </p>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 8 ==================== -->
+      <article class="card" data-card="7" aria-label="Card 8: Inspiração">
+        <div class="card-inner card-inspire">
+          <span class="card-eyebrow">08 / 10</span>
+          <div class="inspire-lines">
+            <p class="inspire-line reveal-up delay-1">Você provavelmente nem percebe.</p>
+            <p class="inspire-line reveal-up delay-2">Mas inspira muita gente.</p>
+            <p class="inspire-line small reveal-up delay-3">Pela dedicação.</p>
+            <p class="inspire-line small reveal-up delay-4">Pela responsabilidade.</p>
+            <p class="inspire-line small reveal-up delay-5">Pela força.</p>
+            <p class="inspire-line small reveal-up delay-6">Pela coragem.</p>
+            <p class="inspire-line small reveal-up delay-7">Pela vontade de crescer.</p>
+            <p class="inspire-line small reveal-up delay-8">Pela forma como enfrenta as coisas.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 9 ==================== -->
+      <article class="card" data-card="8" aria-label="Card 9: Curiosidades">
+        <div class="card-inner">
+          <span class="card-eyebrow">09 / 10</span>
+          <h2 class="card-title reveal-up">Algumas curiosidades:</h2>
+          <div class="card-divider"></div>
+          <ul class="fun-list">
+            <li class="fun-item reveal-up delay-1"><span class="fun-icon">☕</span> Deve funcionar na base do café</li>
+            <li class="fun-item reveal-up delay-2"><span class="fun-icon">📹</span> Já editou vídeo demais</li>
+            <li class="fun-item reveal-up delay-3"><span class="fun-icon">📱</span> Já resolveu problema demais</li>
+            <li class="fun-item reveal-up delay-4"><span class="fun-icon">😅</span> Provavelmente já respondeu mensagem pensando em outra tarefa</li>
+            <li class="fun-item reveal-up delay-5"><span class="fun-icon">😂</span> E provavelmente está julgando esse site profissionalmente</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ==================== CARD 10 ==================== -->
+      <article class="card" data-card="9" aria-label="Card 10: Carta final">
+        <div class="card-inner card-final">
+          <span class="card-eyebrow">10 / 10</span>
+
+          <div class="final-text">
+            <p class="final-line reveal-up delay-1">Quero que você continue conquistando tudo aquilo que sonha.</p>
+            <p class="final-line reveal-up delay-2">Continue criando.</p>
+            <p class="final-line reveal-up delay-3">Continue empreendendo.</p>
+            <p class="final-line reveal-up delay-4">Continue acreditando nas suas ideias.</p>
+            <p class="final-line reveal-up delay-5">Continue sendo exatamente essa mulher determinada que inspira quem está por perto.</p>
+            <p class="final-line reveal-up delay-6">Porque talento você já provou que tem.</p>
+            <p class="final-line reveal-up delay-7">Coragem também.</p>
+
+            <p class="final-line final-line-em reveal-up delay-8">
+              E sinceramente...<br>
+              espero que esse pequeno espaço tenha conseguido arrancar pelo menos um sorriso seu.
+            </p>
+
+            <p class="final-line final-obrigado reveal-up delay-9">
+              Obrigado por ser exatamente quem você é.
+            </p>
+          </div>
+
+          <!-- Mensagem final extra -->
+          <div class="final-extra hidden" id="final-extra">
+            <div class="final-divider"></div>
+            <p class="final-gift">
+              "Não prometi flores. Não prometi um presente caro.<br>
+              Mas, entre tantas coisas que poderiam ser feitas,<br>
+              escolhi dedicar tempo.<br>
+              Porque algumas pessoas merecem exatamente isso:<br>
+              <em>algo feito pensando nelas.</em>" 🌹
+            </p>
+            <p class="final-code">
+              Algumas pessoas recebem presentes.<br>
+              Você acabou de receber <strong>tempo, dedicação</strong><br>
+              e alguns milhares de linhas de código.
+            </p>
+            <p class="final-admiration">
+              (e talvez um pouquinho de admiração também) 🌹
+            </p>
+          </div>
+
+        </div>
+      </article>
+
+    </div><!-- /slides-wrapper -->
+
+    <!-- Botões de navegação -->
+    <button class="nav-btn nav-prev" id="nav-prev" aria-label="Card anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="nav-btn nav-next" id="nav-next" aria-label="Próximo card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+
+  </main>
+
+  <!-- =============================================
+       OVERLAY DE TRANSIÇÃO
+  ============================================= -->
+  <div class="transition-overlay" id="transition-overlay" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
